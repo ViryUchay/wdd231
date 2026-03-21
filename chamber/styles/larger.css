@@ -1,60 +1,43 @@
 /* ============================================================
-   CHAMBER OF COMMERCE — larger.css  (min-width: 640px+)
+   CHAMBER OF COMMERCE — larger.css
    ============================================================ */
 
-/* 640px — 2-col grid */
+/* 640px */
 @media (min-width: 640px) {
-  .header-inner { padding: 0 1.5rem; }
-  .page-banner { padding: 2.5rem 1.5rem 2rem; }
-  .page-banner h1 { font-size: 2.2rem; }
-  main { padding: 2rem 1.5rem; }
-
-  #members-container { grid-template-columns: repeat(2, 1fr); }
-
-  /* list view: 4-col table layout */
-  #members-container.list-view .member-card {
-    grid-template-columns: 1.4fr 2fr 1.3fr 2fr;
-    align-items: center;
-    gap: 0;
+  #members-container {
+    grid-template-columns: repeat(2, 1fr);
   }
-
-  .footer-inner {
-    flex-direction: row; flex-wrap: wrap;
-    justify-content: space-between;
-    text-align: left; padding: 2.5rem 1.5rem;
-  }
-  .footer-meta { text-align: right; }
 }
 
-/* 900px — desktop nav + 3-col grid */
+/* 900px */
 @media (min-width: 900px) {
-  .header-inner { height: 70px; }
-
-  .desktop-nav { display: flex; align-items: center; gap: 0.2rem; }
-  .hamburger   { display: none; }
-  .mobile-nav  { display: none !important; }
-
-  .desktop-nav a {
-    text-decoration: none; color: var(--text-muted);
-    font-size: 0.82rem; font-weight: 500;
-    padding: 0.45rem 0.8rem; border-radius: var(--radius-sm);
-    transition: all var(--transition);
-    text-transform: uppercase; letter-spacing: 0.06em;
-  }
-  .desktop-nav a:hover { background: var(--bg2); color: var(--primary); }
-  .desktop-nav a.active {
-    color: var(--primary); font-weight: 700;
-    border-bottom: 2px solid var(--primary);
-    border-radius: 0; padding-bottom: 0.3rem;
+  .desktop-nav {
+    display: flex;
+    gap: 0.5rem;
   }
 
-  #members-container { grid-template-columns: repeat(3, 1fr); }
-  main { padding: 2.5rem 2rem; }
+  .mobile-nav {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  #members-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-/* 1200px — 4-col grid */
+/* 1200px */
 @media (min-width: 1200px) {
-  .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-  main { padding: 2.5rem 0; }
-  #members-container { grid-template-columns: repeat(3, 1fr); }
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  #members-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
