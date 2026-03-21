@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO ── -->
+  <title>Business Directory | Timbuktu Chamber of Commerce</title>
+  <meta name="description" content="Browse the full directory of member businesses in the Timbuktu Chamber of Commerce. Find local companies by category, contact info, and membership level." />
+  <meta name="author" content="Vivian Eze" />
+
+  <!-- ── FAVICON ── -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="icon" type="image/png"     href="images/favicon.png" sizes="32x32" />
+
+  <!-- ── FACEBOOK OPEN GRAPH ── -->
+  <meta property="og:title"       content="Business Directory | Timbuktu Chamber of Commerce" />
+  <meta property="og:description" content="Discover and connect with local businesses in the Timbuktu Chamber of Commerce directory. Gold, Silver, and Member listings with full contact details." />
+  <meta property="og:image"       content="https://yourusername.github.io/wdd231/chamber/images/og-directory.jpg" />
+  <meta property="og:url"         content="https://yourusername.github.io/wdd231/chamber/directory.html" />
+  <meta property="og:type"        content="website" />
+  <meta property="og:site_name"   content="Timbuktu Chamber of Commerce" />
+
+  <!-- ── CSS — normalize first, then small, then larger ── -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/small.css" />
+  <link rel="stylesheet" href="css/larger.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════
+     HEADER
+══════════════════════════════ -->
+<header>
+  <div class="header-inner">
+
+    <!-- Logo -->
+    <a href="index.html" class="logo" aria-label="Timbuktu Chamber of Commerce home">
+      <div class="logo-icon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        Timbuktu Chamber
+        <span>of Commerce</span>
+      </div>
+    </a>
+
+    <!-- Desktop nav -->
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="discover.html">Discover</a>
+      <a href="directory.html" class="active" aria-current="page">Directory</a>
+      <a href="join.html">Join</a>
+      <a href="about.html">About</a>
+      <a href="podcast.html">Podcast</a>
+      <a href="events.html">Events</a>
+    </nav>
+
+    <div style="display:flex;align-items:center;gap:0.5rem;">
+      <!-- Theme toggle -->
+      <button class="theme-toggle" aria-label="Toggle light/dark theme" id="themeToggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+          <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8z"/>
+        </svg>
+      </button>
+      <!-- Hamburger -->
+      <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileNav" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Mobile nav -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="discover.html">Discover</a>
+    <a href="directory.html" class="active" aria-current="page">Business Directory</a>
+    <a href="join.html">Join</a>
+    <a href="about.html">About</a>
+    <a href="podcast.html">Podcast</a>
+    <a href="events.html">Events</a>
+  </nav>
+</header>
+
+
+<!-- ══════════════════════════════
+     PAGE BANNER
+══════════════════════════════ -->
+<section class="page-banner" aria-label="Directory page banner">
+  <h1>Business Directory</h1>
+  <p>Connecting you with the best businesses in Lagos & beyond</p>
+</section>
+
+
+<!-- ══════════════════════════════
+     MAIN CONTENT
+══════════════════════════════ -->
+<main id="main-content">
+
+  <!-- Controls bar -->
+  <div class="directory-controls" role="toolbar" aria-label="Directory display options">
+    <p class="dir-count">
+      Showing <strong id="member-count">—</strong> member businesses
+    </p>
+    <div class="view-btns" aria-label="View toggle">
+      <button class="view-btn active" id="btn-grid" title="Grid view" aria-pressed="true" aria-label="Switch to grid view">
+        <!-- grid icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+          <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
+        </svg>
+      </button>
+      <button class="view-btn" id="btn-list" title="List view" aria-pressed="false" aria-label="Switch to list view">
+        <!-- list icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Members render target -->
+  <section id="members-container" aria-label="Member businesses" aria-live="polite">
+    <!-- Populated by directory.js -->
+  </section>
+
+</main>
+
+
+<!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+
+    <!-- Contact info -->
+    <address class="footer-address">
+      <strong>Timbuktu Chamber of Commerce</strong>
+      Marina Street<br />
+      Lagos, Nigeria<br />
+      <a href="mailto:info@timbuktucc.org">info@timbuktucc.org</a><br />
+      (223) 555-2300
+    </address>
+
+    <!-- Social -->
+    <div class="footer-social" aria-label="Social media links">
+      <a href="https://youtube.com" class="social-btn" target="_blank" rel="noopener" aria-label="YouTube">
+        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+          <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+        </svg>
+      </a>
+      <a href="https://twitter.com" class="social-btn" target="_blank" rel="noopener" aria-label="Twitter / X">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+          <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+        </svg>
+      </a>
+      <a href="https://linkedin.com" class="social-btn" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+          <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Dev meta -->
+    <div class="footer-meta">
+      WDD231 | <strong>Vivian Eze</strong><br />
+      &copy; <span id="copyright-year"></span> Timbuktu Chamber of Commerce<br />
+      Last Modified: <span id="last-modified"></span>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    Built with care for the Lagos business community.
+  </div>
+</footer>
+
+
+<!-- ── JS ── -->
+<script>
+  // Hamburger toggle
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileNav.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', isOpen);
+  });
+
+  // Theme toggle (basic class swap)
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark-theme');
+  });
+</script>
+<script src="js/directory.js"></script>
+
+</body>
+</html>

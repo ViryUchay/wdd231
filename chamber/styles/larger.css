@@ -1,0 +1,71 @@
+/* ============================================================
+   CHAMBER OF COMMERCE — larger.css  (min-width: 640px+)
+   Layered on top of small.css
+   ============================================================ */
+
+/* ── 640px — tablet ── */
+@media (min-width: 640px) {
+  .header-inner { padding: 0 1.5rem; }
+
+  .page-banner { padding: 2.5rem 1.5rem 2rem; }
+  .page-banner h1 { font-size: 2.25rem; }
+  .page-banner p  { font-size: 0.95rem; }
+
+  main { padding: 2rem 1.5rem; }
+
+  #members-container { grid-template-columns: repeat(2, 1fr); }
+
+  .footer-inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .footer-meta { text-align: right; }
+}
+
+/* ── 900px — desktop ── */
+@media (min-width: 900px) {
+  .header-inner { height: 70px; }
+
+  /* Show desktop nav, hide hamburger */
+  .desktop-nav  { display: flex; align-items: center; gap: 0.2rem; }
+  .hamburger    { display: none; }
+  .mobile-nav   { display: none !important; }
+
+  .desktop-nav a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    font-weight: 500;
+    padding: 0.45rem 0.8rem;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .desktop-nav a:hover { background: var(--bg2); color: var(--primary); }
+
+  .desktop-nav a.active {
+    color: var(--primary);
+    font-weight: 700;
+    border-bottom: 2px solid var(--primary);
+    border-radius: 0;
+    padding-bottom: 0.3rem;
+  }
+
+  #members-container { grid-template-columns: repeat(3, 1fr); }
+
+  main { padding: 2.5rem 2rem; }
+}
+
+/* ── 1200px — wide ── */
+@media (min-width: 1200px) {
+  .header-inner { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+  main { padding: 2.5rem 0; }
+
+  #members-container { grid-template-columns: repeat(4, 1fr); }
+}

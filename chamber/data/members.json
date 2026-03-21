@@ -1,0 +1,108 @@
+{
+    "members": [
+        {
+            "id": 1,
+            "name": "Lagos Trade Hub",
+            "tagline": "Connecting businesses across West Africa",
+            "address": "14 Broad Street, Lagos Island, Lagos",
+            "phone": "+234 801 234 5678",
+            "website": "https://lagosTradehub.ng",
+            "image": "lagos-trade-hub.webp",
+            "membershipLevel": 3,
+            "founded": 2008,
+            "employees": 120,
+            "category": "Trade & Commerce"
+        },
+        {
+            "id": 2,
+            "name": "Marina Tech Solutions",
+            "tagline": "Innovation at the heart of Lagos",
+            "address": "5 Marina Street, Lagos Island, Lagos",
+            "phone": "+234 802 345 6789",
+            "website": "https://marinatech.ng",
+            "image": "marina-tech.webp",
+            "membershipLevel": 3,
+            "founded": 2015,
+            "employees": 85,
+            "category": "Technology"
+        },
+        {
+            "id": 3,
+            "name": "Eko Financial Services",
+            "tagline": "Smart finance for modern businesses",
+            "address": "22 Victoria Island Expressway, Lagos",
+            "phone": "+234 803 456 7890",
+            "website": "https://ekofinancial.ng",
+            "image": "eko-financial.webp",
+            "membershipLevel": 2,
+            "founded": 2011,
+            "employees": 60,
+            "category": "Finance"
+        },
+        {
+            "id": 4,
+            "name": "Bight of Benin Logistics",
+            "tagline": "Reliable freight, every time",
+            "address": "Apapa Wharf Road, Apapa, Lagos",
+            "phone": "+234 804 567 8901",
+            "website": "https://bightlogistics.ng",
+            "image": "bight-logistics.webp",
+            "membershipLevel": 2,
+            "founded": 2003,
+            "employees": 200,
+            "category": "Logistics"
+        },
+        {
+            "id": 5,
+            "name": "Surulere Creative Agency",
+            "tagline": "Bold ideas, brilliant execution",
+            "address": "8 Adeniran Ogunsanya Street, Surulere, Lagos",
+            "phone": "+234 805 678 9012",
+            "website": "https://surulerCreative.ng",
+            "image": "surulere-creative.webp",
+            "membershipLevel": 1,
+            "founded": 2019,
+            "employees": 18,
+            "category": "Creative & Marketing"
+        },
+        {
+            "id": 6,
+            "name": "Lekki Health Partners",
+            "tagline": "Your wellness, our priority",
+            "address": "3 Admiralty Way, Lekki Phase 1, Lagos",
+            "phone": "+234 806 789 0123",
+            "website": "https://lekkihealth.ng",
+            "image": "lekki-health.webp",
+            "membershipLevel": 3,
+            "founded": 2013,
+            "employees": 145,
+            "category": "Healthcare"
+        },
+        {
+            "id": 7,
+            "name": "Ikeja Real Estate Group",
+            "tagline": "Premium property, trusted partners",
+            "address": "45 Allen Avenue, Ikeja, Lagos",
+            "phone": "+234 807 890 1234",
+            "website": "https://ikejarealty.ng",
+            "image": "ikeja-realty.webp",
+            "membershipLevel": 2,
+            "founded": 2007,
+            "employees": 40,
+            "category": "Real Estate"
+        },
+        {
+            "id": 8,
+            "name": "Yaba EdTech Institute",
+            "tagline": "Empowering the next generation",
+            "address": "12 Commercial Avenue, Yaba, Lagos",
+            "phone": "+234 808 901 2345",
+            "website": "https://yabaedtech.ng",
+            "image": "yaba-edtech.webp",
+            "membershipLevel": 1,
+            "founded": 2020,
+            "employees": 25,
+            "category": "Education"
+        }
+    ]
+}
