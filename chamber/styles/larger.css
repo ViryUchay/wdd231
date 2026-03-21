@@ -1,43 +1,159 @@
-/* ============================================================
-   CHAMBER OF COMMERCE — larger.css
-   ============================================================ */
+/* ==========================================================
+   Timbuktu Chamber of Commerce — larger.css (640px+)
+   Author: Vivian Eze | WDD231
+   ========================================================== */
 
-/* 640px */
+/* ── 640px — tablets ────────────────────────────────────── */
 @media (min-width: 640px) {
+  .header-inner {
+    padding: 0 1.75rem;
+    height: 70px;
+  }
+
+  main {
+    padding: 2.5rem 1.75rem 4rem;
+  }
+
+  .page-banner {
+    padding: 3rem 2rem 2.5rem;
+  }
+
+  .page-banner h1 {
+    font-size: 2.5rem;
+  }
+
+  .page-banner p {
+    font-size: 1rem;
+  }
+
+  .dir-info h2 {
+    font-size: 2rem;
+  }
+
   #members-container {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .footer-inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    padding: 3rem 1.75rem;
+  }
+
+  .footer-meta {
+    text-align: right;
+  }
+
+  .footer-social {
+    align-self: center;
   }
 }
 
-/* 900px */
-@media (min-width: 900px) {
-  .desktop-nav {
-    display: flex;
-    gap: 0.5rem;
+/* ── 768px — list view 4-col layout ────────────────────── */
+@media (min-width: 768px) {
+  #members-container.list-view .member-card {
+    display: grid;
+    grid-template-columns: 2fr 2.5fr 1.5fr 2fr;
+    align-items: center;
+    gap: 0 1rem;
+    padding: 0.9rem 1.5rem;
   }
 
-  .mobile-nav {
-    display: none !important;
+  #members-container.list-view .card-body {
+    display: contents;
+  }
+
+  .list-header {
+    grid-template-columns: 2fr 2.5fr 1.5fr 2fr;
+    gap: 0 1rem;
+    padding: 0.7rem 1.5rem;
+  }
+}
+
+/* ── 1024px — desktop nav ───────────────────────────────── */
+@media (min-width: 1024px) {
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.15rem;
   }
 
   .hamburger {
     display: none;
   }
 
+  .mobile-nav {
+    display: none !important;
+  }
+
+  .desktop-nav a {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.5rem 0.9rem;
+    border-radius: var(--radius-xs);
+    transition: all var(--tr);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+  }
+
+  .desktop-nav a:hover {
+    background: var(--bg2);
+    color: var(--primary);
+  }
+
+  .desktop-nav a.active {
+    color: var(--primary);
+    font-weight: 700;
+    background: var(--bg2);
+    position: relative;
+  }
+
+  .desktop-nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0.9rem;
+    right: 0.9rem;
+    height: 2px;
+    background: var(--primary);
+    border-radius: 2px;
+  }
+
   #members-container {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  main {
+    padding: 3rem 2rem 5rem;
+  }
 }
 
-/* 1200px */
-@media (min-width: 1200px) {
-  main {
-    max-width: 1200px;
+/* ── 1280px — wide desktop ──────────────────────────────── */
+@media (min-width: 1280px) {
+  .header-inner {
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0 2rem;
+  }
+
+  main {
+    max-width: 1280px;
+    padding: 3rem 2rem 5rem;
+  }
+
+  .footer-inner {
+    max-width: 1280px;
+    padding: 3rem 2rem;
   }
 
   #members-container {
     grid-template-columns: repeat(4, 1fr);
+    gap: 1.4rem;
   }
 }
