@@ -8,50 +8,54 @@
     <title>WDD231 | Vivian Eze</title>
 
     <meta name="description"
-        content="WDD231 course homepage for Vivian Eze showcasing web development assignments and projects.">
+        content="WDD231 course homepage for Vivian Eze showcasing web development skills, responsive design, and JavaScript functionality.">
 
     <meta name="author" content="Vivian Eze">
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/larger.css">
 
+    <!-- JS -->
     <script src="scripts/main.js" defer></script>
-
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header>
         <div class="logo-area">
-            <img src="images/logo.svg" alt="Site Logo">
+            <img src="images/logo.svg" alt="Vivian Eze personal website logo">
             <span>Vivian Eze</span>
         </div>
 
         <button id="menu">&#9776;</button>
 
-        <nav>
+        <nav aria-label="Main Navigation">
             <ul class="navigation">
-                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">Home</a></li>
                 <li><a href="chamber.html">Chamber</a></li>
                 <li><a href="final.html">Final</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <!-- MAIN -->
+    <main class="container">
 
         <h1>Home</h1>
 
+        <!-- ABOUT -->
         <section class="about">
             <h2>About Me</h2>
             <p>
-                I am a motivated learner with a strong interest in technology, problem-solving, and personal growth. My
-                background is in Information Technology, where I developed skills in computer support, digital tools,
+                I am a motivated learner with a strong interest in technology, problem-solving, and personal growth.
+                My background is in Information Technology, where I developed skills in computer support, digital tools,
                 and basic programming. I enjoy exploring how technology can be used to solve real-world problems and
                 improve people’s lives.
 
@@ -62,42 +66,43 @@
             </p>
         </section>
 
+        <!-- PHOTO -->
         <section class="photo">
             <h2>Student Photo</h2>
-            <img src="images/profile.webp" alt="Student Photo">
+            <img src="images/profile.webp" alt="Vivian Eze studying web development">
         </section>
 
+        <!-- COURSES -->
         <section class="courses">
-
             <h2>Web Certificate Courses</h2>
 
             <div class="buttons">
                 <button id="all">All</button>
-                <button id="cse">CSE</button>
                 <button id="wdd">WDD</button>
+                <button id="cse">CSE</button>
             </div>
 
-            <div id="course-container"></div>
+            <div id="courses"></div>
 
-            <p>Total Credits: <span id="credits"></span></p>
-
+            <p>Total Credits: <span id="totalCredits"></span></p>
         </section>
 
     </main>
 
+    <!-- FOOTER -->
     <footer>
 
         <div class="social">
-            <a href="https://github.com" target="_blank">GitHub</a>
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-            <a href="https://twitter.com" target="_blank">X</a>
+            <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener">X</a>
         </div>
 
         <p>
-            © <span id="currentyear"></span> Vivian Eze • Nigeria
+            © <span id="year"></span> Vivian Eze • Nigeria
         </p>
 
-        <p id="lastModified"></p>
+        <p>Last Modified: <span id="lastModified"></span></p>
 
     </footer>
 
