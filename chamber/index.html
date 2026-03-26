@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Home | Timbuktu Chamber of Commerce</title>
+    <meta name="description"
+        content="Welcome to the Timbuktu Chamber of Commerce — connecting businesses, driving growth, and building community in Lagos and across West Africa.">
+    <meta name="author" content="Vivian Eze">
+    <meta name="keywords" content="chamber of commerce, Lagos, Nigeria, business, trade, West Africa, Timbuktu">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Timbuktu Chamber of Commerce">
+    <meta property="og:description"
+        content="Connecting businesses, driving growth, and building community in Lagos and across West Africa.">
+    <meta property="og:image" content="https://viryuchay.github.io/wdd231/chamber/images/og-home.jpg">
+    <meta property="og:url" content="https://viryuchay.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalise.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JS (DEFERRED) -->
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ===================== HEADER ===================== -->
+    <header>
+        <div class="header-inner">
+
+            <a href="index.html" class="logo" aria-label="Timbuktu Chamber of Commerce — Home">
+                <div class="logo-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                        <path d="M3 9h18M9 21V9" />
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    Timbuktu Chamber
+                    <span>of Commerce</span>
+                </div>
+            </a>
+
+            <nav class="desktop-nav" aria-label="Main navigation">
+                <a href="index.html" class="active" aria-current="page">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+                <a href="about.html">About</a>
+                <a href="podcast.html">Podcast</a>
+                <a href="events.html">Events</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
+                <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false"
+                    aria-controls="mobileNav">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+
+        </div>
+
+        <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="about.html">About</a>
+            <a href="podcast.html">Podcast</a>
+            <a href="events.html">Events</a>
+        </nav>
+    </header>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" aria-label="Welcome banner">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-content">
+            <span class="hero-eyebrow">Lagos · Nigeria · West Africa</span>
+            <h1>Where <em>Business</em><br>Meets Community</h1>
+            <p>
+                The Timbuktu Chamber of Commerce connects entrepreneurs, corporations,
+                and community leaders to create a thriving economy across Lagos and beyond.
+            </p>
+            <a href="join.html" class="hero-cta" aria-label="Join the Timbuktu Chamber of Commerce">
+                Join the Chamber
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===================== MAIN ===================== -->
+    <main id="main-content">
+
+        <!-- ---- HOME GRID: EVENTS + WEATHER ---- -->
+        <div class="home-grid" aria-label="News and weather">
+
+            <!-- EVENTS -->
+            <section class="events-section" aria-labelledby="events-heading">
+                <div class="section-header" style="text-align:left;">
+                    <h2 id="events-heading">Upcoming Events</h2>
+                    <div class="section-divider" style="margin-left:0;"></div>
+                    <p style="margin-top:.75rem;">Stay connected with the latest happenings in our business community.
+                    </p>
+                </div>
+
+                <div class="events-list" role="list">
+
+                    <article class="event-card" role="listitem">
+                        <div class="event-date-badge" aria-label="April 8">
+                            <span class="month">Apr</span>
+                            <span class="day">08</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Annual Business Summit 2025</h3>
+                            <p>Connect with industry leaders and explore growth opportunities at our flagship annual
+                                gathering.</p>
+                            <div class="event-meta">
+                                <span>🕘 9:00 AM – 5:00 PM</span>
+                                <span>📍 Eko Hotel, Victoria Island</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="event-card" role="listitem">
+                        <div class="event-date-badge" aria-label="April 17">
+                            <span class="month">Apr</span>
+                            <span class="day">17</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>SME Financing Workshop</h3>
+                            <p>Practical guidance on accessing capital, grants, and credit facilities for small and
+                                medium enterprises.</p>
+                            <div class="event-meta">
+                                <span>🕙 10:00 AM – 1:00 PM</span>
+                                <span>📍 Chamber House, Marina</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="event-card" role="listitem">
+                        <div class="event-date-badge" aria-label="May 3">
+                            <span class="month">May</span>
+                            <span class="day">03</span>
+                        </div>
+                        <div class="event-info">
+                            <h3>Tech &amp; Trade Networking Night</h3>
+                            <p>An evening mixer for tech founders, traders, and investors to build meaningful business
+                                connections.</p>
+                            <div class="event-meta">
+                                <span>🕕 5:00 PM – 8:00 PM</span>
+                                <span>📍 Co-Creation Hub, Yaba</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- WEATHER -->
+            <div class="weather-section-wrap">
+                <section class="weather-section" aria-labelledby="weather-heading">
+                    <h2 id="weather-heading"
+                        style="color:#fff; font-size:1.2rem; margin-bottom:1.5rem; display:flex; align-items:center; gap:.5rem;">
+                        <span aria-hidden="true">🌍</span> Current Weather
+                    </h2>
+                    <div id="weather-container" aria-live="polite" aria-atomic="true">
+                        <div class="loading-placeholder" style="color:rgba(255,255,255,.6)">
+                            <div class="spinner"></div> Loading weather…
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div><!-- /.home-grid -->
+
+        <!-- ---- SPOTLIGHTS ---- -->
+        <section class="spotlights-section" aria-labelledby="spotlights-heading">
+            <div class="section-header">
+                <h2 id="spotlights-heading">Member Spotlights</h2>
+                <div class="section-divider"></div>
+                <p>Celebrating outstanding Gold &amp; Silver members driving business excellence in Lagos.</p>
+            </div>
+            <div class="spotlights-grid" id="spotlights-grid" aria-live="polite" aria-atomic="true">
+                <!-- Populated by home.js -->
+            </div>
+        </section>
+
+    </main><!-- /#main-content -->
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer>
+        <div class="footer-inner">
+
+            <div>
+                <div class="footer-logo">
+                    <div class="logo-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <path d="M3 9h18M9 21V9" />
+                        </svg>
+                    </div>
+                    <span class="logo-text" style="color:#fff;">
+                        Timbuktu Chamber
+                        <span>of Commerce</span>
+                    </span>
+                </div>
+                <address>
+                    <strong>Timbuktu Chamber of Commerce</strong><br>
+                    Marina Street<br>
+                    Lagos, Nigeria<br>
+                    <a href="mailto:info@timbuktucc.org">info@timbuktucc.org</a><br>
+                    (223) 555-2300
+                </address>
+            </div>
+
+            <div class="footer-meta">
+                WDD231 | <strong>Vivian Eze</strong><br>
+                &copy; <span id="copyright-year"></span> Timbuktu Chamber of Commerce<br>
+                Last Modified: <span id="last-modified"></span>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
