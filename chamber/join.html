@@ -39,171 +39,163 @@
 
 <body>
 
-<header>
-    <div class="header-inner">
-        <a href="index.html" class="logo">Timbuktu Chamber</a>
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">Timbuktu Chamber</a>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="discover.html">Discover</a>
-            <a href="directory.html">Directory</a>
-            <a href="join.html" class="active">Join</a>
-        </nav>
-    </div>
-</header>
-
-<main class="join-container">
-
-    <!-- FORM -->
-    <section class="form-area">
-        <h1>Join the Timbuktu Chamber of Commerce</h1>
-
-       <form method="get" action="thankyou.html">
-
-    <!-- FIRST NAME -->
-    <label title="Enter your first name">
-        First Name
-        <input type="text" name="fname" required
-            autocomplete="given-name"
-            title="Enter your first name">
-    </label>
-
-    <!-- LAST NAME -->
-    <label title="Enter your last name">
-        Last Name
-        <input type="text" name="lname" required
-            autocomplete="family-name"
-            title="Enter your last name">
-    </label>
-
-    <!-- ORGANIZATION TITLE -->
-    <label title="Enter your role in the organization">
-        Organizational Title
-        <input type="text" name="orgtitle"
-            autocomplete="organization-title"
-            title="Enter your role in the organization"
-            pattern="[A-Za-z\s\-]{7,}">
-    </label>
-
-    <!-- EMAIL -->
-    <label title="Enter your email address">
-        Email
-        <input type="email" name="email" required
-            autocomplete="email"
-            placeholder="name@example.com"
-            title="Enter a valid email address">
-    </label>
-
-    <!-- PHONE -->
-    <label title="Enter your mobile phone number">
-        Mobile Phone
-        <input type="tel" name="phone" required
-            autocomplete="tel"
-            title="Enter your mobile phone number">
-    </label>
-
-    <!-- ORGANIZATION NAME -->
-    <label title="Enter your business name">
-        Business Name
-        <input type="text" name="organization" required
-            autocomplete="organization"
-            title="Enter your business name">
-    </label>
-
-    <!-- MEMBERSHIP -->
-    <label title="Select a membership level">
-        Membership Level
-        <select name="membership">
-            <option value="np">NP Membership</option>
-            <option value="bronze">Bronze</option>
-            <option value="silver">Silver</option>
-            <option value="gold">Gold</option>
-        </select>
-    </label>
-
-    <!-- DESCRIPTION -->
-    <label title="Describe your business">
-        Business Description
-        <textarea name="description" rows="4"
-            title="Provide a brief description of your business"></textarea>
-    </label>
-
-    <!-- TIMESTAMP -->
-    <input type="hidden" name="timestamp" id="timestamp">
-
-    <!-- SUBMIT -->
-    <button type="submit">Apply for Membership</button>
-
-    </form>
-    </section>
-
-    <!-- CARDS -->
-    <aside class="cards">
-
-        <div class="card">
-            <h3>NP Membership</h3>
-            <button data-modal="npModal">View Benefits</button>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html" class="active">Join</a>
+            </nav>
         </div>
+    </header>
 
-        <div class="card">
-            <h3>Bronze</h3>
-            <button data-modal="bronzeModal">View Benefits</button>
+    <main class="join-container">
+
+        <!-- FORM -->
+        <section class="form-area">
+            <h1>Join the Timbuktu Chamber of Commerce</h1>
+
+            <form method="get" action="thankyou.html">
+
+                <!-- FIRST NAME -->
+                <label title="Enter your first name">
+                    First Name
+                    <input type="text" name="fname" required autocomplete="given-name" title="Enter your first name">
+                </label>
+
+                <!-- LAST NAME -->
+                <label title="Enter your last name">
+                    Last Name
+                    <input type="text" name="lname" required autocomplete="family-name" title="Enter your last name">
+                </label>
+
+                <!-- ORGANIZATION TITLE -->
+                <label title="Enter your role in the organization">
+                    Organizational Title
+                    <input type="text" name="orgtitle" autocomplete="organization-title"
+                        title="Enter your role in the organization" pattern="[A-Za-z\s\-]{7,}">
+                </label>
+
+                <!-- EMAIL -->
+                <label title="Enter your email address">
+                    Email
+                    <input type="email" name="email" required autocomplete="email" placeholder="name@example.com"
+                        title="Enter a valid email address">
+                </label>
+
+                <!-- PHONE -->
+                <label title="Enter your mobile phone number">
+                    Mobile Phone
+                    <input type="tel" name="phone" required autocomplete="tel" title="Enter your mobile phone number">
+                </label>
+
+                <!-- ORGANIZATION NAME -->
+                <label title="Enter your business name">
+                    Business Name
+                    <input type="text" name="organization" required autocomplete="organization"
+                        title="Enter your business name">
+                </label>
+
+                <!-- MEMBERSHIP -->
+                <label title="Select a membership level">
+                    Membership Level
+                    <select name="membership">
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                    </select>
+                </label>
+
+                <!-- DESCRIPTION -->
+                <label title="Describe your business">
+                    Business Description
+                    <textarea name="description" rows="4"
+                        title="Provide a brief description of your business"></textarea>
+                </label>
+
+                <!-- TIMESTAMP -->
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <!-- SUBMIT -->
+                <button type="submit">Apply for Membership</button>
+
+            </form>
+        </section>
+
+        <!-- CARDS -->
+        <aside class="cards">
+
+            <h2>Membership Levels</h2> <!-- ✅ THIS FIXES THE ERROR -->
+
+            <div class="card">
+                <h3>NP Membership</h3>
+                <button data-modal="npModal">View Benefits</button>
+            </div>
+
+            <div class="card">
+                <h3>Bronze</h3>
+                <button data-modal="bronzeModal">View Benefits</button>
+            </div>
+
+            <div class="card">
+                <h3>Silver</h3>
+                <button data-modal="silverModal">View Benefits</button>
+            </div>
+
+            <div class="card">
+                <h3>Gold</h3>
+                <button data-modal="goldModal">View Benefits</button>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <!-- MODALS -->
+    <dialog id="npModal">
+        <h3>NP Membership</h3>
+        <p>No fee. For non-profits.</p>
+        <button data-close="npModal">Close</button>
+    </dialog>
+
+    <dialog id="bronzeModal">
+        <h3>Bronze</h3>
+        <p>Basic networking and training.</p>
+        <button data-close="bronzeModal">Close</button>
+    </dialog>
+
+    <dialog id="silverModal">
+        <h3>Silver</h3>
+        <p>Includes events and advertising.</p>
+        <button data-close="silverModal">Close</button>
+    </dialog>
+
+    <dialog id="goldModal">
+        <h3>Gold</h3>
+        <p>All benefits and spotlight features.</p>
+        <button data-close="goldModal">Close</button>
+    </dialog>
+
+    <footer>
+        <div class="footer-inner">
+            <div>
+                <p><strong>Timbuktu Chamber of Commerce</strong></p>
+                <p>Lagos, Nigeria</p>
+                <p>info@timbuktucc.org</p>
+            </div>
+
+            <div>
+                <p>WDD231 | Vivian Eze</p>
+                <p>© Timbuktu Chamber of Commerce</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
         </div>
-
-        <div class="card">
-            <h3>Silver</h3>
-            <button data-modal="silverModal">View Benefits</button>
-        </div>
-
-        <div class="card">
-            <h3>Gold</h3>
-            <button data-modal="goldModal">View Benefits</button>
-        </div>
-
-    </aside>
-
-</main>
-
-<!-- MODALS -->
-<dialog id="npModal">
-    <h3>NP Membership</h3>
-    <p>No fee. For non-profits.</p>
-    <button data-close="npModal">Close</button>
-</dialog>
-
-<dialog id="bronzeModal">
-    <h3>Bronze</h3>
-    <p>Basic networking and training.</p>
-    <button data-close="bronzeModal">Close</button>
-</dialog>
-
-<dialog id="silverModal">
-    <h3>Silver</h3>
-    <p>Includes events and advertising.</p>
-    <button data-close="silverModal">Close</button>
-</dialog>
-
-<dialog id="goldModal">
-    <h3>Gold</h3>
-    <p>All benefits and spotlight features.</p>
-    <button data-close="goldModal">Close</button>
-</dialog>
-
-<footer>
-    <div class="footer-inner">
-        <div>
-            <p><strong>Timbuktu Chamber of Commerce</strong></p>
-            <p>Lagos, Nigeria</p>
-            <p>info@timbuktucc.org</p>
-        </div>
-
-        <div>
-            <p>WDD231 | Vivian Eze</p>
-            <p>© Timbuktu Chamber of Commerce</p>
-            <p>Last Modified: <span id="lastModified"></span></p>
-        </div>
-    </div>
-</footer>
+    </footer>
 
 </body>
+
 </html>
