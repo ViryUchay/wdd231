@@ -117,3 +117,25 @@ if (hamburger) {
 const savedView = localStorage.getItem('chamber-dir-view') || 'grid';
 setView(savedView);
 fetchMembers();
+// ── BUILD CARD ────────────────────────────────────────────────
+function buildCard(m, index) {
+    const card = document.createElement('article');
+    card.className = 'member-card';
+    card.style.animationDelay = `${index * 0.04}s`;
+
+    const emoji = EMOJI[m.category] || '🏬';
+    // Clean up the URL for display if you prefer, 
+    // but the screenshot shows the full https:// link.
+    
+    card.innerHTML = `
+    <div class="card-logo" aria-label="${m.name} logo">
+      ${emoji}
+    </div>
+    <div class="card-body"> <h3 class="card-name">${m.name}</h3>
+      <p class="card-detail">${m.address}</p> <p class="card-detail">${m.phone}</p>   <a class="card-url" href="${m.website}" target="_blank" rel="noopener">
+        ${m.website}
+      </a>
+    </div>`;
+
+    return card;
+}
