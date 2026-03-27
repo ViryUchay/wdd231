@@ -150,3 +150,51 @@
     gap: 1.4rem;
   }
 }
+
+/* ── 1280px — wide desktop ────────────────────────────── */
+@media (min-width: 1280px) {
+  #members-container.grid {
+    /* Use 'grid' class specifically so it doesn't break 'list' view */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 640px) {
+  /* ... your existing code ... */
+
+  .member-card {
+    text-align: left;
+    /* Match the screenshot alignment */
+    align-items: flex-start;
+  }
+
+  .card-body {
+    align-items: flex-start;
+    /* Keeps text to the left */
+    padding: 1.25rem;
+  }
+
+  /* Styling the website links specifically */
+  .card-body a {
+    font-size: 0.85rem;
+    color: #8B4513;
+    /* Primary brown from your logo */
+    margin-top: 0.5rem;
+  }
+}
+
+.page-banner {
+  background: linear-gradient(to bottom, #8B4513, #4B2508);
+  /* Dark brown gradient */
+  color: #FFFFFF;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.page-banner h1 {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
