@@ -41,19 +41,19 @@ document.getElementById("lastModified").textContent =
     document.lastModified;
 
 function displayMembers(members) {
-  const container = document.querySelector('#spotlights-grid');
-  container.innerHTML = ""; // Clear existing content
+    const container = document.querySelector('#spotlights-grid');
+    container.innerHTML = ""; // Clear existing content
 
-  // Filter for gold or silver members if required by your assignment
-  const featured = members.filter(m => m.membership === 'Gold' || m.membership === 'Silver')
-                          .sort(() => 0.5 - Math.random()) // Shuffle
-                          .slice(0, 3); // Pick top 3
+    // Filter for gold or silver members if required by your assignment
+    const featured = members.filter(m => m.membership === 'Gold' || m.membership === 'Silver')
+        .sort(() => 0.5 - Math.random()) // Shuffle
+        .slice(0, 3); // Pick top 3
 
-  featured.forEach(member => {
-    const card = document.createElement('article');
-    card.classList.add('member-card'); // Matches our CSS
+    featured.forEach(member => {
+        const card = document.createElement('article');
+        card.classList.add('member-card'); // Matches our CSS
 
-    card.innerHTML = `
+        card.innerHTML = `
       <h3>${member.name}</h3>
       <img src="images/${member.image}" alt="${member.name} logo" loading="lazy">
       <p class="tagline"><em>"${member.tagline}"</em></p>
@@ -63,9 +63,9 @@ function displayMembers(members) {
       <p class="membership-level">${member.membership} Member</p>
     `;
 
-    container.appendChild(card);
-  });
-}    
+        container.appendChild(card);
+    });
+}
 
 const membersURL = "data/members.json"; // Update path if needed
 
@@ -85,9 +85,9 @@ async function getMembers() {
 
 function displaySpotlights(members) {
     const mainContainer = document.querySelector('#spotlights-grid');
-    
+
     // 1. Filter for Gold and Silver only
-    const eligibleMembers = members.filter(m => 
+    const eligibleMembers = members.filter(m =>
         m.membership === 'Gold' || m.membership === 'Silver'
     );
 
@@ -96,7 +96,7 @@ function displaySpotlights(members) {
     const selected = shuffled.slice(0, 3);
 
     // 3. Clear and build the HTML
-    mainContainer.innerHTML = ""; 
+    mainContainer.innerHTML = "";
 
     selected.forEach(member => {
         const card = document.createElement('article');
@@ -117,3 +117,8 @@ function displaySpotlights(members) {
 
 // Initialize the call
 getMembers();
+
+// Update the last modified date in the footer
+document.getElementById("lastModified").textContent = document.lastModified;
+
+// ... your existing getMembers() and displaySpotlights() functions ...
