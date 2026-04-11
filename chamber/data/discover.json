@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Lekki Conservation Centre",
+    "image": "images/lekkicons.webp",
+    "address": "Lekki Peninsula II, Lagos",
+    "description": "A nature reserve famous for its canopy walkway, wildlife, and peaceful environment.",
+    "url": "https://www.nigerianconservation.org/lekki-conservation-centre/"
+  },
+  {
+    "name": "Nike Art Gallery",
+    "image": "images/nikeart.webp",
+    "address": "Lekki, Lagos",
+    "description": "One of the largest art galleries in West Africa showcasing Nigerian culture and creativity.",
+    "url": "https://nikeartfoundation.com/"
+  },
+  {
+    "name": "National Theatre",
+    "image": "images/nationaltheatre.webp",
+    "address": "Iganmu, Lagos",
+    "description": "A historic landmark for performing arts and cultural events in Nigeria.",
+    "url": "https://en.wikipedia.org/wiki/National_Theatre,_Nigeria"
+  },
+  {
+    "name": "Tarkwa Bay Beach",
+    "image": "images/tarkwabay.webp",
+    "address": "Lagos Island, Lagos",
+    "description": "A sheltered beach accessible by boat, perfect for relaxation and water sports.",
+    "url": "https://en.wikipedia.org/wiki/Tarkwa_Bay_Beach"
+  },
+  {
+    "name": "Freedom Park",
+    "image": "images/freedom.webp",
+    "address": "Broad Street, Lagos Island",
+    "description": "A cultural and historical site that hosts concerts, festivals, and exhibitions.",
+    "url": "https://en.wikipedia.org/wiki/Freedom_Park_(Lagos)"
+  },
+  {
+    "name": "Lekki Arts and Crafts Market",
+    "image": "images/lekkimarket.webp",
+    "address": "Lekki-Epe Expressway, Lagos",
+    "description": "A vibrant market offering handmade crafts, souvenirs, and artworks.",
+    "url": "https://en.wikipedia.org/wiki/Lekki"
+  },
+  {
+    "name": "Agbakoba Park",
+    "image": "images/agbakoba.webp",
+    "address": "Murtala Muhammed Airport Road, Lagos",
+    "description": "A beautifully landscaped garden ideal for picnics, relaxation, and outdoor events.",
+    "url": "https://www.google.com/maps?q=Murtala+Muhammed+Airport+Road+Lagos"
+  },
+  {
+    "name": "Elegushi Beach",
+    "image": "images/elegushi.webp",
+    "address": "Lekki, Lagos",
+    "description": "A popular private beach known for entertainment, food, and nightlife.",
+    "url": "https://en.wikipedia.org/wiki/Elegushi_Beach"
+  }
+]
