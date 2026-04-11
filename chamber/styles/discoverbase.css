@@ -19,6 +19,7 @@
   --accent: #e6f0ff;
   --nav-bg: #003366;
   --text: #1a1a1a;
+  --muted-text: #555;
   --white: #ffffff;
   --max-width: 1200px;
 }
@@ -62,7 +63,7 @@ header h1 {
 
 /* ---------- NAVIGATION ---------- */
 nav {
-  background-color: #003366;
+  background-color: var(--nav-bg);
 }
 
 nav ul {
@@ -71,19 +72,21 @@ nav ul {
   list-style: none;
   max-width: var(--max-width);
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 nav a {
   display: block;
   padding: 0.75rem 1.25rem;
-  color: #ffffff font-weight: 600;
-  transition: background 0.3s ease;
+  color: var(--white);
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover,
 nav a.active {
-  background-color: #004080;
-  color: #ffffff;
+  background-color: var(--primary);
+  color: var(--white);
   border-bottom: 3px solid var(--secondary);
 }
 
@@ -103,7 +106,7 @@ main h1 {
 
 /* ---------- VISIT MESSAGE ---------- */
 .visit {
-  background: #ffffff;
+  background: var(--white);
   padding: 1rem;
   margin: 1rem 0;
   border-left: 5px solid var(--secondary);
@@ -153,7 +156,7 @@ main h1 {
   grid-area: address;
   font-style: normal;
   font-size: 0.9rem;
-  color: #555;
+  color: var(--muted-text);
 }
 
 .card p {
@@ -199,11 +202,6 @@ footer {
   font-size: 0.9rem;
 }
 
-/* ---------- ACTIVE NAVIGATION ---------- */
-.active {
-  border-bottom: 3px solid var(--secondary);
-}
-
 /* ---------- RESPONSIVE DESIGN ---------- */
 
 /* Medium Screens (Tablets) */
@@ -236,4 +234,10 @@ footer {
   main h1 {
     font-size: 2.3rem;
   }
+}
+.error {
+  text-align: center;
+  color: #b00020;
+  font-weight: 600;
+  padding: 1rem;
 }
