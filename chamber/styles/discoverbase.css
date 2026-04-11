@@ -1,0 +1,239 @@
+/* =============================================
+   DISCOVERBASE.CSS — Lagos Chamber of Commerce
+   Optimized for Discover Lagos Page
+   ============================================= */
+
+/* ---------- CSS RESET ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- ROOT VARIABLES ---------- */
+:root {
+  --primary: #004080;
+  --secondary: #f4a300;
+  --accent: #e6f0ff;
+  --nav-bg: #003366;
+  --text: #1a1a1a;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+/* ---------- GLOBAL STYLES ---------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Source Sans 3", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+  background-color: var(--white);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  background-color: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 0.75rem;
+}
+
+header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+}
+
+/* ---------- NAVIGATION ---------- */
+nav {
+  background-color: var(--nav-bg);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+nav a {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  color: var(--white);
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: var(--primary);
+  border-bottom: 3px solid var(--secondary);
+}
+
+/* ---------- MAIN CONTENT ---------- */
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+main h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+/* ---------- VISIT MESSAGE ---------- */
+.visit {
+  background: var(--white);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-left: 5px solid var(--secondary);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.visit p {
+  text-align: center;
+  font-weight: 500;
+}
+
+/* ---------- CARD CONTAINER ---------- */
+.card-container {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+/* ---------- CARD DESIGN USING NAMED GRID AREAS ---------- */
+.card {
+  display: grid;
+  grid-template-areas:
+    "title"
+    "image"
+    "address"
+    "description"
+    "button";
+  gap: 0.5rem;
+  background: var(--white);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.card h2 {
+  grid-area: title;
+  color: var(--primary);
+  font-size: 1.3rem;
+}
+
+.card figure {
+  grid-area: image;
+}
+
+.card address {
+  grid-area: address;
+  font-style: normal;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.card p {
+  grid-area: description;
+  font-size: 0.95rem;
+}
+
+.card .btn {
+  grid-area: button;
+  display: inline-block;
+  background: var(--secondary);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.card .btn:hover {
+  background: var(--primary);
+}
+
+/* Hover effect for larger screens only */
+@media (min-width: 768px) {
+  .card img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .card img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* ---------- ACTIVE NAVIGATION ---------- */
+.active {
+  border-bottom: 3px solid var(--secondary);
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+/* Medium Screens (Tablets) */
+@media (min-width: 641px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Large Screens (Desktops) */
+@media (min-width: 1025px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card {
+    grid-template-areas:
+      "image title"
+      "image address"
+      "image description"
+      "image button";
+    grid-template-columns: 1fr 1.2fr;
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  main h1 {
+    font-size: 2.3rem;
+  }
+}
