@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Logistics & Weather | Agri-Trade West Africa</title>
+    <meta name="description" content="Access logistics services and real-time weather updates for agricultural trade across West Africa.">
+    <meta name="author" content="Vivian Eze">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Logistics & Weather | Agri-Trade West Africa">
+    <meta property="og:description" content="Reliable logistics and real-time weather insights for agribusiness in West Africa.">
+    <meta property="og:image" content="images/og-image.webp">
+    <meta property="og:url" content="https://yourgithubusername.github.io/agri-trade-west-africa/logistics.html">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- JavaScript -->
+    <script type="module" src="scripts/weather.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1 class="logo">Agri-Trade West Africa</h1>
+        <button id="menu-toggle" aria-label="Toggle Navigation">☰</button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Market Directory</a></li>
+                <li><a href="logistics.html" class="active">Logistics & Weather</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <!-- Weather Section -->
+    <section class="weather">
+        <h2>West Africa Weather Updates</h2>
+        <p>Check current weather conditions to plan safe and efficient transportation of agricultural goods.</p>
+
+        <div class="weather-card">
+            <h3 id="city">Port Harcourt, Nigeria</h3>
+            <p><strong>Temperature:</strong> <span id="temperature">Loading...</span></p>
+            <p><strong>Condition:</strong> <span id="description">Loading...</span></p>
+            <p><strong>Humidity:</strong> <span id="humidity">Loading...</span></p>
+            <p><strong>Wind Speed:</strong> <span id="wind">Loading...</span></p>
+            <img id="weather-icon" src="" alt="Weather icon" loading="lazy">
+        </div>
+    </section>
+
+    <!-- Logistics Section -->
+    <section class="logistics">
+        <h2>Logistics Services</h2>
+        <div class="grid">
+            <article class="card">
+                <h3>Transportation</h3>
+                <p>Reliable road, rail, and sea transport solutions across West Africa.</p>
+            </article>
+            <article class="card">
+                <h3>Cold Chain Storage</h3>
+                <p>Temperature-controlled storage facilities for perishable goods.</p>
+            </article>
+            <article class="card">
+                <h3>Export Assistance</h3>
+                <p>Guidance on ECOWAS trade regulations and export documentation.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="form-section">
+        <h2>Register for Logistics Support</h2>
+        <form method="get" action="thankyou.html" class="contact-form">
+            
+            <label>Full Name
+                <input type="text" name="fullname" required>
+            </label>
+
+            <label>Email Address
+                <input type="email" name="email" required>
+            </label>
+
+            <label>Phone Number
+                <input type="tel" name="phone" required>
+            </label>
+
+            <label>Type of Produce
+                <input type="text" name="produce" required>
+            </label>
+
+            <label>Destination Country
+                <input type="text" name="destination" required>
+            </label>
+
+            <label>Preferred Logistics Service
+                <select name="service" required>
+                    <option value="">Select a service</option>
+                    <option value="Transportation">Transportation</option>
+                    <option value="Cold Chain Storage">Cold Chain Storage</option>
+                    <option value="Export Assistance">Export Assistance</option>
+                </select>
+            </label>
+
+            <label>Additional Notes
+                <textarea name="notes" rows="4"></textarea>
+            </label>
+
+            <button type="submit" class="btn">Submit Request</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span> Agri-Trade West Africa | Vivian Eze</p>
+    <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>

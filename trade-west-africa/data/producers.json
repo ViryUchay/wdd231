@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Green Harvest Cooperative",
+    "crop": "Maize",
+    "location": "Kaduna, Nigeria",
+    "contact": "+234 800 123 4567",
+    "email": "info@greenharvest.com",
+    "image": "images/farmers.webp",
+    "description": "A leading maize producer supplying high-quality grains."
+  },
+  {
+    "name": "Savanna Agro Traders",
+    "crop": "Sorghum",
+    "location": "Kano, Nigeria",
+    "contact": "+234 800 222 3344",
+    "email": "contact@savannaagro.com",
+    "image": "images/farmers.webp",
+    "description": "Specialists in sorghum production and distribution."
+  },
+  {
+    "name": "Golden Cocoa Farms",
+    "crop": "Cocoa",
+    "location": "Ibadan, Nigeria",
+    "contact": "+234 800 555 7788",
+    "email": "info@goldencocoa.com",
+    "image": "images/farmers.webp",
+    "description": "Premium cocoa producers serving export markets."
+  },
+  {
+    "name": "Niger Rice Growers",
+    "crop": "Rice",
+    "location": "Kebbi, Nigeria",
+    "contact": "+234 800 444 1122",
+    "email": "support@nigerrice.com",
+    "image": "images/farmers.webp",
+    "description": "Top rice suppliers in West Africa."
+  },
+  {
+    "name": "Sunrise Cassava Farms",
+    "crop": "Cassava",
+    "location": "Ogun, Nigeria",
+    "contact": "+234 800 777 8899",
+    "email": "hello@sunrisecassava.com",
+    "image": "images/farmers.webp",
+    "description": "Producers of high-quality cassava products."
+  },
+  {
+    "name": "Sahel Groundnut Cooperative",
+    "crop": "Groundnuts",
+    "location": "Maradi, Niger",
+    "contact": "+227 900 12345",
+    "email": "info@sahelgroundnut.ne",
+    "image": "images/farmers.webp",
+    "description": "Renowned for organic groundnut production."
+  },
+  {
+    "name": "Volta Vegetable Farms",
+    "crop": "Vegetables",
+    "location": "Accra, Ghana",
+    "contact": "+233 200 123456",
+    "email": "contact@voltafarms.gh",
+    "image": "images/farmers.webp",
+    "description": "Suppliers of fresh vegetables across the region."
+  },
+  {
+    "name": "Abidjan Palm Producers",
+    "crop": "Palm Oil",
+    "location": "Abidjan, Côte d'Ivoire",
+    "contact": "+225 070 1234567",
+    "email": "info@abidjanpalm.ci",
+    "image": "images/farmers.webp",
+    "description": "High-quality palm oil producers."
+  },
+  {
+    "name": "Senegal Fresh Fruits Ltd.",
+    "crop": "Fruits",
+    "location": "Dakar, Senegal",
+    "contact": "+221 770 123456",
+    "email": "sales@senegalfresh.sn",
+    "image": "images/farmers.webp",
+    "description": "Exporters of tropical fruits."
+  },
+  {
+    "name": "Bamako Mango Exporters",
+    "crop": "Mangoes",
+    "location": "Bamako, Mali",
+    "contact": "+223 760 123456",
+    "email": "info@bamakoexports.ml",
+    "image": "images/farmers.webp",
+    "description": "Leading mango exporters in West Africa."
+  },
+  {
+    "name": "Lomé Spice Traders",
+    "crop": "Spices",
+    "location": "Lomé, Togo",
+    "contact": "+228 900 12345",
+    "email": "contact@lometspice.tg",
+    "image": "images/farmers.webp",
+    "description": "Suppliers of premium spices."
+  },
+  {
+    "name": "Cotonou Cotton Growers",
+    "crop": "Cotton",
+    "location": "Cotonou, Benin",
+    "contact": "+229 970 12345",
+    "email": "info@cotonoucotton.bj",
+    "image": "images/farmers.webp",
+    "description": "Major cotton suppliers for textile industries."
+  },
+  {
+    "name": "Freetown Fisheries & Farms",
+    "crop": "Seafood",
+    "location": "Freetown, Sierra Leone",
+    "contact": "+232 770 123456",
+    "email": "info@freetownfarms.sl",
+    "image": "images/farmers.webp",
+    "description": "Providers of fresh seafood and farm produce."
+  },
+  {
+    "name": "Banjul Organic Farms",
+    "crop": "Organic Produce",
+    "location": "Banjul, The Gambia",
+    "contact": "+220 700 1234",
+    "email": "info@banjulorganic.gm",
+    "image": "images/farmers.webp",
+    "description": "Specialists in organic farming."
+  },
+  {
+    "name": "Monrovia Rubber Plantations",
+    "crop": "Rubber",
+    "location": "Monrovia, Liberia",
+    "contact": "+231 770 123456",
+    "email": "info@monroviarubber.lr",
+    "image": "images/farmers.webp",
+    "description": "Suppliers of natural rubber."
+  }
+]
