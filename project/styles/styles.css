@@ -1,0 +1,229 @@
+:root {
+    --primary: #2E5A27;
+    --secondary: #F4A460;
+    --accent: #E67E22;
+    --background: #F9F9F9;
+    --text: #333;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: var(--primary);
+    color: var(--white);
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation */
+#menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    display: block;
+}
+
+.nav-links {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+}
+
+.nav-links.open {
+    display: flex;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background: var(--accent);
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    display: grid;
+    gap: 1rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.hero img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Features */
+.features {
+    padding: 2rem;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* CTA Section */
+.cta {
+    background: var(--secondary);
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Footer */
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    #menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.directory {
+    padding: 2rem;
+    text-align: center;
+}
+
+.view-toggle {
+    margin: 1rem 0;
+}
+
+.view-toggle button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.list {
+    display: block;
+}
+
+.list .card {
+    display: flex;
+    gap: 1rem;
+    text-align: left;
+}
+
+/* Modal Styling */
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 1.5rem;
+    max-width: 500px;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#closeModal {
+    float: right;
+    background: red;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+}
+.weather-card {
+    background: white;
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    padding: 2rem;
+    background: #ffffff;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    border: none;
+    cursor: pointer;
+}
