@@ -5,105 +5,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>WDD231 | Vivian Eze</title>
-
+    <title>Agri-Trade West Africa | Connecting Farmers and Markets</title>
     <meta name="description"
-        content="WDD231 course homepage for Vivian Eze showcasing web development skills, responsive design, and JavaScript functionality.">
-
+        content="Agri-Trade West Africa connects farmers, traders, and logistics providers across West Africa to enhance agricultural trade and food security.">
     <meta name="author" content="Vivian Eze">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Agri-Trade West Africa">
+    <meta property="og:description" content="Connecting farmers, traders, and logistics providers across West Africa.">
+    <meta property="og:image" content="images/og-image.webp">
+    <meta property="og:url" content="https://viryuchay.github.io/agri-trade-west-africa/">
+    <meta property="og:type" content="website">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/larger.css">
 
-    <!-- JS -->
-    <script src="scripts/main.js" defer></script>
+    <!-- JavaScript -->
+    <script type="module" src="scripts/main.js"></script>
 </head>
 
 <body>
 
-    <!-- HEADER -->
+    <!-- Header -->
     <header>
-        <div class="logo-area">
-            <img src="images/logo.svg" alt="Vivian Eze personal website logo">
-            <span>Vivian Eze</span>
+        <div class="container">
+            <h1 class="logo">Agri-Trade West Africa</h1>
+            <button id="menu-toggle" aria-label="Toggle Navigation">☰</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="directory.html">Market Directory</a></li>
+                    <li><a href="logistics.html">Logistics & Weather</a></li>
+                </ul>
+            </nav>
         </div>
-
-        <button id="menu">&#9776;</button>
-
-        <nav aria-label="Main Navigation">
-            <ul class="navigation">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="chamber.html">Chamber</a></li>
-                <li><a href="final.html">Final</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <!-- MAIN -->
-    <main class="container">
+    <!-- Main Content -->
+    <main>
 
-        <h1>Home</h1>
-
-        <!-- ABOUT -->
-        <section class="about">
-            <h2>About Me</h2>
-            <p>
-                I am a motivated learner with a strong interest in technology, problem-solving, and personal growth.
-                My background is in Information Technology, where I developed skills in computer support, digital tools,
-                and basic programming. I enjoy exploring how technology can be used to solve real-world problems and
-                improve people’s lives.
-
-                Currently, I am continuing my education to strengthen my knowledge in web development and computer
-                programming. Returning to school has been both challenging and rewarding, but it has helped me build new
-                skills, confidence, and discipline. I believe that learning is a lifelong process, and I am committed to
-                improving myself every day.
-            </p>
-        </section>
-
-        <!-- PHOTO -->
-        <section class="photo">
-            <h2>Student Photo</h2>
-            <img src="images/profile.webp" alt="Vivian Eze studying web development">
-        </section>
-
-        <!-- COURSES -->
-        <section class="courses">
-            <h2>Web Certificate Courses</h2>
-
-            <div class="buttons">
-                <button id="all">All</button>
-                <button id="wdd">WDD</button>
-                <button id="cse">CSE</button>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Connecting Agricultural Markets Across West Africa</h2>
+                <p>
+                    A digital platform linking farmers, traders, and logistics providers
+                    to improve food security and boost regional trade.
+                </p>
+                <a href="directory.html" class="btn">Explore Market Directory</a>
             </div>
+            <img src="images/hero.webp" alt="Farmers harvesting crops in West Africa" loading="lazy" width="600"
+                height="400">
+        </section>
 
-            <div id="courses"></div>
+        <!-- Features Section -->
+        <section class="features">
+            <h2>Our Services</h2>
+            <div class="grid">
+                <article class="card">
+                    <img src="images/farmers.webp" alt="Farmers working in the field" loading="lazy">
+                    <h3>Market Directory</h3>
+                    <p>Find trusted farmers, cooperatives, and agribusinesses across West Africa.</p>
+                </article>
 
-            <p>Total Credits: <span id="totalCredits"></span></p>
+                <article class="card">
+                    <img src="images/logistics.webp" alt="Agricultural logistics and transportation" loading="lazy">
+                    <h3>Logistics & Weather</h3>
+                    <p>Access real-time weather updates and transportation support.</p>
+                </article>
+
+                <article class="card">
+                    <img src="images/insight.webp" alt="Information on Ecowas market opportunities" loading="lazy">
+                    <h3>Regional Trade Insights</h3>
+                    <p>Stay informed about ECOWAS regulations and market opportunities.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Call-to-Action -->
+        <section class="cta">
+            <h2>Join the Agri-Trade Network</h2>
+            <p>Register today to connect with partners across West Africa.</p>
+            <a href="logistics.html" class="btn">Get Started</a>
         </section>
 
     </main>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer>
-
-        <div class="social">
-            <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://twitter.com" target="_blank" rel="noopener">X</a>
-        </div>
-
+        <p>&copy; <span id="year"></span> Agri-Trade West Africa | Vivian Eze</p>
+        <p id="lastModified"></p>
         <p>
-            © <span id="year"></span> Vivian Eze • Nigeria
+            🎥 <a href="https://www.loom.com/share/032ca971aa504581a88ac2e69288f98c" target="_blank" rel="noopener">
+                Watch Project Demonstration Video
+            </a>
         </p>
-
-        <p>Last Modified: <span id="lastModified"></span></p>
-
     </footer>
 
 </body>
